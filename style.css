@@ -1,0 +1,28 @@
+/* 1. Global Reset: Biarkan setiap elemen mengikuti lebar kontainernya */
+* { box-sizing: border-box; }
+
+/* 2. Variabel: Mengatur gaya di satu tempat */
+:root {
+    --lebar-maks: 580px;
+    --warna-teks: #333;
+}
+
+body { font-family: 'Times New Roman', serif; }
+
+/* 3. Layout: Gunakan flex/grid agar mudah dijelaskan */
+.container {
+    width: 90%;
+    max-width: var(--lebar-maks);
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* 4. Input: Gunakan selektor grup agar hemat baris */
+input[type="text"], select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+/* 5. Tombol */
+.buttons { text-align: center; }
